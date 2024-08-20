@@ -1,7 +1,74 @@
+/* Login.css */
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
 .Body {
     background-color: #474747;
     display: flex;
     justify-content: center;
+    /* Centraliza horizontalmente */
     align-items: center;
+    /* Centraliza verticalmente */
     height: 100vh;
+    /* Altura da viewport */
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    /* Organiza os itens verticalmente */
+    justify-content: center;
+    /* Centraliza os itens verticalmente dentro da grid */
+    align-items: center;
+    /* Alinha os itens horizontalmente dentro da grid */
+    gap: 10px;
+    /* Espaço entre os itens */
+}
+
+.email,
+.password {
+    margin: 10px;
+}
+
+label {
+    display: block;
+    /* Garante que a label ocupe a linha inteira */
+    margin-bottom: 5px;
+    /* Espaço entre a label e o campo de entrada */
+    font-weight: bold;
+    /* Torna o texto da label mais visível */
+    color: #ffffff;
+    /* Cor do texto da label */
+}
+
+/* Define um tamanho fixo para todos os botões */
+.p-button {
+    width: 100%;
+    /* Faz com que os botões ocupem toda a largura do contêiner */
+    text-align: center;
+    /* Alinha o texto no centro */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Espaço entre os botões */
+    width: 100%;
+    /* Faz com que o contêiner de botões ocupe toda a largura disponível */
+    max-width: 200px;
+    /* Limita a largura máxima dos botões */
+}
+
+/* Ajusta os campos de entrada para garantir que tenham a mesma largura */
+.p-inputtext,
+.p-password {
+    width: 100%;
+    /* Faz com que os campos ocupem toda a largura disponível */
+    padding: 8px;
+    /* Espaçamento interno dos campos */
 }
