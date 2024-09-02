@@ -4,7 +4,7 @@ import { Card } from 'primereact/card';
 import { InputText } from 'primereact/inputtext';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
-import { useNavigate } from 'react-router-dom';
+import { Router, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [usuario, setUsuario] = useState({ email: "", password: "" });
@@ -39,8 +39,8 @@ const Login = () => {
                     </div>
                     <div className="button-container">
                         <Button onClick={login} label="Login" className="p-button" />
-                        <Button label="Recuperar Senha" className="p-button" />
-                        <Button label="Cadastrar-se" className="p-button" />
+                        <Button onClick={() => (navigate("/recopassoword"))} label="Recuperar Senha" className="p-button" />
+                        <Button onClick={() => (navigate("/newlogin"))} label="Cadastrar-se" className="p-button" />
                     </div>
                 </div>
             </Card>
