@@ -1,5 +1,4 @@
 import React from "react";
-import { Button} from "primereact/button";
 import {useNavigate} from 'react-router-dom'
 
 
@@ -12,10 +11,6 @@ const Logout = () =>{
         navigate("/login");
     }
 
-    return(
-        <>
-            <Button label="Sair" onClick={logout}/>
-        </>
-    );
+    return logout;
 }
 export default Logout;

@@ -10,11 +10,10 @@ const RecoPassoword = () => {
 
     return (
         <div className="Body">
-            <Card title="recoPassoword">
+            <Card title="Recuperar Senha">
                 <div className="grid">
                     <div className="email">
-                        <label htmlFor="E-Mail">E-Mail:</label>
-                        <InputText name="email" placeholder="E-Mail" />
+                        <InputText name="email" placeholder="E-Mail:" />
                     </div>
                     <div className="button-container">
                         <Button label="Recuperar Senha" className="p-button" />

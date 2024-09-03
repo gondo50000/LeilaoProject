@@ -30,17 +30,17 @@ const Login = () => {
             <Card title="Login">
                 <div className="grid">
                     <div className="email">
-                        <label htmlFor="E-Mail">E-Mail:</label>
-                        <InputText onChange={handleChange} name="email" placeholder="E-Mail" />
+                        <InputText onChange={handleChange} name="email" placeholder="E-Mail:" />
                     </div>
                     <div className="password">
-                        <label htmlFor="password">Senha:</label>
-                        <Password onChange={handleChange} name="password" id="password" feedback={false} placeholder="Senha" toggleMask />
+                        <Password onChange={handleChange} name="password" id="password" feedback={false} placeholder="Senha:" toggleMask />
+                    </div>
+                    <div>
+                        <p><u onClick={() => (navigate("/newlogin"))}>Cadastrese aqui!</u></p>
+                        <p>Esqueceu sua senha?<u onClick={() => (navigate("/recopassoword"))}>Recupere aqui!</u></p>
                     </div>
                     <div className="button-container">
                         <Button onClick={login} label="Login" className="p-button" />
-                        <Button onClick={() => (navigate("/recopassoword"))} label="Recuperar Senha" className="p-button" />
-                        <Button onClick={() => (navigate("/newlogin"))} label="Cadastrar-se" className="p-button" />
                     </div>
                 </div>
             </Card>

@@ -10,18 +10,15 @@ const NewLogin = () => {
 
     return (
         <div className="Body">
-            <Card title="NewLogin">
+            <Card title="Cadastro">
                 <div className="fiel col-12">
-                    <label for="FirstName">Nome:</label><br />
-                    <InputText placeholder="Nome" />
+                    <InputText placeholder="Nome:" />
                 </div>
                 <div className="fiel col-12">
-                    <label for="LastName">Sobrenome:</label><br />
-                    <InputText placeholder="Sobrenome" />
+                    <InputText placeholder="Sobrenome:" />
                 </div>
                 <div className="fiel col-12">
-                    <label for="email">E-Mail:</label><br/>
-                    <InputText placeholder="E-Mail" />
+                    <InputText placeholder="E-Mail:" />
                 </div>
                 <div className="col-fixed">
                     <Button label="Cadastrar" />
