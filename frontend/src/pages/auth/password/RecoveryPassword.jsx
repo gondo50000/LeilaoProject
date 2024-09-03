@@ -1,5 +1,5 @@
 import React from "react";
-import "./RecoPassoword.css";
+import "./RecoveryPassword.css";
 import { Card } from "primereact/card";
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";

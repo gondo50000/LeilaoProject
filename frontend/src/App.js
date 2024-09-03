@@ -1,12 +1,12 @@
 import './App.css';
 import {BrowserRouter, Route, Routes} from  'react-router-dom';
 import Home from './pages/home/Home';
-import Login from './pages/login/Login';
+import Login from './pages/auth/login/Login';
 import DefaultLayout from './components/DefaultLayout';
 import SimpleLayout from './components/SimpleLayout';
-import NewLogin from './pages/register/Register';
+import NewLogin from './pages/auth/register/Register';
 import PrivateRouter from './components/PrivateRouter';
-import RecoPassoword from './pages/passoword/RecoPassoword';
+import RecoPassoword from './pages/auth/password/RecoveryPassword';
 
 
 function App() {

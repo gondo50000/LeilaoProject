@@ -31,6 +31,12 @@ const Header = () =>{
         {
             label: 'Perfil',
             icon: 'pi pi-user',
+            items: [
+                {
+                    label: 'Alterar Senha',
+                    icon: 'pi pi-lock'
+                }
+            ]
         },
         {
             label: 'Sair',
