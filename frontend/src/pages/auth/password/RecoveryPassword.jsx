@@ -6,6 +6,7 @@ import { Button } from "primereact/button";
 import { useNavigate } from "react-router-dom";
 
 const RecoPassoword = () => {
+    const handleChange = () => {};
     const navigate = useNavigate();
 
     return (
@@ -14,6 +15,9 @@ const RecoPassoword = () => {
                 <div className="grid">
                     <div className="email">
                         <InputText name="email" placeholder="E-Mail:" />
+                    </div>
+                    <div className="codigo">
+                        <InputText onChange={handleChange} name="codigo" placeholder="Codigo de Validação" />
                     </div>
                     <div className="button-container">
                         <Button label="Recuperar Senha" className="p-button" />

@@ -3,16 +3,20 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    border: 1px solid #aaa9a9;
+    background-color: #1f1f1f;
+    border-top: 1px solid #00c896;
     border-radius: 5px 5px 0 0;
-    padding: 10px;
-    background-color: #dfdfdf;
+    padding: 15px 0;
     text-align: center;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .footer p {
     margin: 0;
-    font-size: 14px;
-    color: #333;
+    font-size: 16px;
+    color: #dfdfdf;
+}
+
+.footer p span {
+    color: #00c896;
 }

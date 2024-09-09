@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1f1f1f, #5a5a5a);
+    color: #ffffff;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.home-container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #00c896;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.home-container p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #dfdfdf;
+}
+
+.nft-button {
+    background-color: #00c896;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.nft-button:hover {
+    background-color: #008f6b;
+}

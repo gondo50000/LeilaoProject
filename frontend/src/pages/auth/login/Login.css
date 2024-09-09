@@ -2,10 +2,11 @@ html,
 body {
     margin: 0;
     height: 100%;
+    font-family: 'Arial', sans-serif;
 }
 
 .Body {
-    background-color: #474747;
+    background-color: #1f1f1f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,40 +18,74 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .email,
 .password {
     margin: 10px;
+    width: 100%;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #4b5563;
+    color: #ffffff;
 }
 
 .p-button {
     width: 100%;
     text-align: center;
+    background-color: #00c896;
+    border: none;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.p-button:hover {
+    background-color: #00a37a;
 }
 
 .button-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
 }
 
 .p-inputtext,
 .p-password {
     width: 100%;
-    padding: 8px;
+    padding: 12px;
+    border: 1px solid #00c896;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+}
+
+.p-inputtext:focus,
+.p-password:focus {
+    outline: none;
+    border-color: #00c896;
+    box-shadow: 0px 0px 8px rgba(0, 200, 150, 0.6);
 }
 
 .link-redirection {
+    color: #00c896;
     cursor: pointer;
+    text-decoration: underline;
+}
+
+.link-redirection:hover {
+    color: #00a37a;
 }
