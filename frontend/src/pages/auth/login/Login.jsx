@@ -36,8 +36,8 @@ const Login = () => {
                         <Password onChange={handleChange} name="password" id="password" feedback={false} placeholder="Senha:" toggleMask />
                     </div>
                     <div>
-                        <p><u onClick={() => (navigate("/newlogin"))}>Cadastrese aqui!</u></p>
-                        <p>Esqueceu sua senha?<u onClick={() => (navigate("/recopassoword"))}>Recupere aqui!</u></p>
+                        <p><u className="link-redirection" onClick={() => (navigate("/newlogin"))}>Cadastrese aqui!</u></p>
+                        <p>Esqueceu sua senha?<u className="link-redirection" onClick={() => (navigate("/recopassoword"))}>Recupere aqui!</u></p>
                     </div>
                     <div className="button-container">
                         <Button onClick={login} label="Login" className="p-button" />

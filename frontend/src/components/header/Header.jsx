@@ -35,6 +35,10 @@ const Header = () =>{
                 {
                     label: 'Alterar Senha',
                     icon: 'pi pi-lock'
+                },
+                {
+                    label: 'Informações Pessoais',
+                    icon: 'pi pi-file-edit'
                 }
             ]
         },
