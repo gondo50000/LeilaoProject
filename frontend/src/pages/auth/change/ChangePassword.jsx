@@ -3,9 +3,20 @@ import "./ChangePassword.css";
 import { InputText } from "primereact/inputtext";
 import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
+import { Button } from 'primereact/button';
 
 const ChangePassword = () => {
     const handleChange = () => { };
+
+    const handleSendCode = () => {
+        // Lógica para enviar o código
+        alert("Código enviado para o e-mail.");
+    };
+
+    const handleChangePassword = () => {
+        // Lógica para alterar a senha
+        alert("Senha alterada com sucesso.");
+    };
 
     return (
         <div className="page-container">
@@ -38,6 +49,18 @@ const ChangePassword = () => {
                             onChange={handleChange}
                             name="confirmacao"
                             placeholder="Confirmação Nova Senha"
+                        />
+                    </div>
+                    <div className="button-container">
+                        <Button
+                            label="Mandar Código"
+                            className="p-button p-button-primary"
+                            onClick={handleSendCode}
+                        />
+                        <Button
+                            label="Alterar Senha"
+                            className="p-button p-button-success"
+                            onClick={handleChangePassword}
                         />
                     </div>
                 </div>

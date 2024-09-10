@@ -3,9 +3,15 @@ import "./Profile.css";
 import { InputText } from "primereact/inputtext";
 import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
+import { Button } from 'primereact/button';
 
 const Profile = () => {
     const handleChange = () => { };
+
+    const handleSave = () => {
+        // Lógica para salvar as alterações
+        alert('Alterações salvas!');
+    };
 
     return (
         <div className="profile-container">
@@ -34,6 +40,9 @@ const Profile = () => {
             <div className="input-field">
                 <label className="input-label" htmlFor="endereco">Endereço</label>
                 <InputText id="endereco" onChange={handleChange} name="endereco" placeholder="Endereço" />
+            </div>
+            <div className="button-container">
+                <Button label="Salvar" className="p-button" onClick={handleSave} />
             </div>
             <Footer />
         </div>
