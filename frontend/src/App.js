@@ -7,7 +7,7 @@ import SimpleLayout from './components/SimpleLayout';
 import NewLogin from './pages/auth/register/Register';
 import PrivateRouter from './components/PrivateRouter';
 import RecoPassoword from './pages/auth/password/RecoveryPassword';
-import ChangePassword from './pages/auth/password/ChangePassword';
+import ChangePassword from './pages/auth/change/ChangePassword';
 import Profile from './pages/auth/profile/Profile';
 
 

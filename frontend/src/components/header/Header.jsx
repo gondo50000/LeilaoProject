@@ -2,13 +2,17 @@ import React from "react";
 import "./Header.css";
 import { Menubar } from 'primereact/menubar';
 import Logout from "../logout/Logout";
+import { useNavigate } from 'react-router-dom';
 
-const Header = () =>{
+const Header = () => {
     const logout = Logout();
+    const navigate = useNavigate();
+
     const items = [
         {
             label: 'Home',
-            icon: 'pi pi-home'
+            icon: 'pi pi-home',
+            command: () => navigate('/')
         },
         {
             label: 'Leilão',
@@ -16,15 +20,18 @@ const Header = () =>{
             items: [
                 {
                     label: 'Meus NFTs',
-                    icon: 'pi pi-bolt'
+                    icon: 'pi pi-bolt',
+                    command: () => navigate('/meus-nfts')
                 },
                 {
                     label: 'Salas de Leilão',
-                    icon: 'pi pi-server'
+                    icon: 'pi pi-server',
+                    command: () => navigate('/salas-leilao')
                 },
                 {
                     label: 'Salas Favoritas',
-                    icon: 'pi pi-star'
+                    icon: 'pi pi-star',
+                    command: () => navigate('/salas-favoritas')
                 },
             ]
         },
@@ -34,11 +41,13 @@ const Header = () =>{
             items: [
                 {
                     label: 'Alterar Senha',
-                    icon: 'pi pi-lock'
+                    icon: 'pi pi-lock',
+                    command: () => navigate('/changepassword')
                 },
                 {
                     label: 'Informações Pessoais',
-                    icon: 'pi pi-file-edit'
+                    icon: 'pi pi-file-edit',
+                    command: () => navigate('/profile')
                 }
             ]
         },
@@ -49,7 +58,7 @@ const Header = () =>{
         }
     ];
 
-    return(
+    return (
         <div className="header">
             <div className="card">
                 <Menubar model={items} />
@@ -57,4 +66,5 @@ const Header = () =>{
         </div>
     );
 }
+
 export default Header;
