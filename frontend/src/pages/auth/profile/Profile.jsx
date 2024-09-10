@@ -1,13 +1,15 @@
 import React from "react";
 import "./Profile.css";
 import { InputText } from "primereact/inputtext";
+import Header from "../../../components/header/Header";
+import Footer from "../../../components/footer/Footer";
 
 const Profile = () => {
-    const handleChange = () => {
-    };
+    const handleChange = () => { };
 
     return (
         <div className="profile-container">
+            <Header />
             <h1>Perfil do Usuário</h1>
             <div className="input-field">
                 <label className="input-label" htmlFor="nome">Nome</label>
@@ -33,6 +35,7 @@ const Profile = () => {
                 <label className="input-label" htmlFor="endereco">Endereço</label>
                 <InputText id="endereco" onChange={handleChange} name="endereco" placeholder="Endereço" />
             </div>
+            <Footer />
         </div>
     );
 };

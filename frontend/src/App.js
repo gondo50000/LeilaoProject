@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter, Route, Routes} from  'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Login from './pages/auth/login/Login';
 import DefaultLayout from './components/DefaultLayout';
@@ -13,20 +13,20 @@ import Profile from './pages/auth/profile/Profile';
 
 function App() {
   return (
-   <>
+    <>
       <BrowserRouter>
         <Routes>
-          <Route element ={<PrivateRouter/>}>
-            <Route path='/' element={<DefaultLayout><Home/></DefaultLayout>}/>
+          <Route element={<PrivateRouter />}>
+            <Route path='/' element={<DefaultLayout><Home /></DefaultLayout>} />
+            <Route path='/newlogin' element={<SimpleLayout><NewLogin /></SimpleLayout>} />
+            <Route path='/recopassoword' element={<SimpleLayout><RecoPassoword /></SimpleLayout>} />
+            <Route path='/Changepassword' element={<SimpleLayout><ChangePassword /></SimpleLayout>} />
+            <Route path='/profile' element={<SimpleLayout><Profile /></SimpleLayout>} />
           </Route>
-            <Route path='/login' element={<SimpleLayout><Login/></SimpleLayout>} />
-            <Route path='/newlogin' element={<SimpleLayout><NewLogin/></SimpleLayout>} />
-            <Route path='/recopassoword' element={<SimpleLayout><RecoPassoword/></SimpleLayout>} />
-            <Route path='/Changepassword' element={<SimpleLayout><ChangePassword/></SimpleLayout>} />
-            <Route path='/profile' element={<SimpleLayout><Profile/></SimpleLayout>} />
+          <Route path='/login' element={<SimpleLayout><Login /></SimpleLayout>} />
         </Routes>
       </BrowserRouter>
-   </>
+    </>
   );
 }
 

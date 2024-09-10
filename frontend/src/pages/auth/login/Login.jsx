@@ -15,7 +15,7 @@ const Login = () => {
     };
 
     const login = () => {
-        if (usuario.email === "eduardor.germano@hotmail.com" && usuario.password === "123") {
+        if (usuario.email === "teste@gmail.com" && usuario.password === "123") {
             let token = "token do backend";
             localStorage.setItem("token", token);
             localStorage.setItem("email", usuario.email);
