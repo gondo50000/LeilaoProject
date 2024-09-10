@@ -1,28 +1,42 @@
 .home-container {
     text-align: center;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #1f1f1f;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .home-container h1 {
     font-size: 36px;
-    color: #333;
+    color: #00c896;
+    margin-bottom: 20px;
 }
 
 .home-container p {
     font-size: 18px;
-    color: #666;
+    color: #ddd;
+    margin-bottom: 20px;
 }
 
 .nft-button {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #00c896;
-    color: white;
+    color: #1f1f1f;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .nft-button:hover {
@@ -41,10 +55,45 @@
     width: 250px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #2e2e2e;
+    color: #fff;
+    overflow: hidden;
+    text-align: left;
 }
 
 .card-image {
     width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.card-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #00c896;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #009c77;
 }
